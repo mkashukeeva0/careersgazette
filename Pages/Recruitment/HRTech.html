@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Tech</title>
+    <link rel="stylesheet" href="../MainSite.css">
+    <style>
+ body {
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            font-size: 100px;
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* padding-top: 85px; */
+            padding-bottom: 85px;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logos {
+            /* border: 2px solid grey; */
+            position: relative;
+            top: 1.2em;
+            right: 5em;
+            /* right: 12em;
+            opacity: 0.3; */
+
+
+        }
+
+        .logoPink,
+        .logoLike1,
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            width: 0.5em;
+            height: 0.5em;
+            vertical-align: top;
+            margin-left: 0;
+            display: inline-block;
+            border-radius: -50%;
+        }
+
+        .logoPink {
+            background-color: #f5a;
+            position: relative;
+            right: 35px;
+            left: 125px;
+            z-index: 1;
+        }
+
+        .logoLike1 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            position: relative;
+            border-radius: 35%;
+            top: -43.5px;
+            bottom: 60px;
+            left: 40px;
+            z-index: 4;
+        }
+
+        .logo1 {
+            background-color: blueviolet;
+            position: relative;
+            top: 10px right: 10px;
+            z-index: 2;
+        }
+
+
+        .logo2 {
+            background-color: #f5a;
+            position: relative;
+            right: 40px;
+            z-index: 1;
+        }
+
+        .logo3 {
+            background-color: #59f;
+            border: 1px solid black;
+            position: relative;
+            border-top-left-radius: 52%;
+            border-radius: 52%;
+            right: 100px;
+            bottom: 35px;
+            left: -150px;
+            z-index: 3;
+        }
+
+        .logo4 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            /* font-size: 1; */
+            position: relative;
+            border-radius: 35%;
+            bottom: 45px;
+            right: 190px;
+            z-index: 4;
+        }
+
+        nav>ul>li {
+            float: left;
+            width: 33.3%;
+            cursor: pointer;
+        }
+
+        nav>ul>li>strong {
+            display: block;
+            padding: 1em 0;
+            text-align: center;
+            background-color: #555;
+            color: #dedede;
+        }
+
+      
+        nav>ul>li:hover>strong {
+            color: #fff;
+        }
+
+        
+        nav>ul>li>ul {
+          
+            display: none;
+            background-color: rgb(228, 242, 245);
+        }
+
+        nav>ul>li:hover>ul {
+            display: block;
+        }
+
+     
+        nav>ul>li>ul>li {
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        
+        nav>ul>li>ul>li:hover {
+            font-weight: bold;
+        }
+
+
+        nav>ul>li>ul>li {
+            border: 1px solid #f77;
+            border-top: 0;
+        }
+
+        .MenuBody,
+        .more,
+        .welcome2,
+        #block1,
+        .block2 {
+            border: 1px solid black;
+        }
+
+  
+        .welcome,
+        .topstories {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .welcome {
+            border: 3px solid red;
+            width: 58%;
+            height: 50vh;
+            box-sizing: border-box;
+            /* margin: 0; */
+        }
+
+        img {
+            width: 58%;
+            height: 30vh;
+            margin-left: 25vh;
+            margin-right: 25vh;
+        }
+
+        .welcomeExcerpt {
+            position: relative;
+            top: 30px;
+        }
+
+        .topstories {
+            border: 3px solid red;
+            /* margin: 0; */
+            width: 40%;
+            height: 50vh;
+            box-sizing: border-box;
+            margin-left: -0.4em;
+        }
+
+        .more {
+            width: auto;
+            height: 10vh;
+        }
+
+        .welcome2 {
+            border: 1px solid aqua;
+            width: 50%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+
+        #block1,
+        .block12 {
+            border: 1px solid red;
+            width: 50%;
+            height: 50vh;
+        }
+
+        ul {
+
+            list-style-type: none;
+
+            padding: 0;
+        }
+
+        li {
+
+            display: inline-block;
+            text-align: center;
+            width: 5em;
+            height: 5em;
+            margin-left: -0.25em;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu_fill_box {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #first {
+
+            margin-left: 3em;
+        }
+
+        .menu {
+            border: 2px solid grey;
+            display: inline-block;
+            position: relative;
+            width: 15%;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+        .menu:hover {
+            background-color: #f9c;
+        }
+
+        #oddOne {
+            position: relative;
+            bottom: 12.66em;
+            left: 79%;
+            margin-left: -0.8em;
+            font-size: 1em;
+        }
+
+
+        .block12A,
+        .block12B,
+        .block12C,
+        .block12D {
+            border: 2px solid grey;
+            display: inline-block;
+            width: 22%;
+            height: 20em;
+            vertical-align: top;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: #667;
+            font-size: 20px;
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 85px;
+            position: relative;
+            top: 15px;
+        }
+
+
+        /* footer>a {
+            display: inline-block;
+            margin-bottom: 20em;
+        } */
+
+        .footerLeft {
+            position: absolute;
+            left: 250px;
+        }
+
+        .footerMiddle {
+            position: relative;
+            left: 50vw;
+
+        }
+        h1 {
+            border-bottom: black;
+        }
+
+        .img {
+            border: 2px solid black;
+            width: 20%;
+            height: 20%;
+
+        }
+
+        .bookmark_btn {
+            position: fixed;
+            bottom: 0;
+            right: .2em;
+            font-size: 3em;
+            color: #566;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <div class="logoPink"></div>
+            <div class="logoLike1"></div>
+            <div class="logo1"></div>
+            <div class="logo2"></div>
+            <div class="logo3"></div>
+            <div class="logo4"></div>
+        </div>
+        <div class="text">The Career Gazette</div>
+    </header>
+
+    <nav>
+
+        <ul>
+            <li id="first" class="menu"><a class="menu_fill_box" href="index.html"><strong>Home</strong></a></li>
+            <li class="menu"><a class="menu_fill_box"
+                    href="Pages/Recruitment/RecruitmentPage.html"><strong>Recruitment</strong></a>
+                <ul>
+                    <li class="hide">
+                        <a href="Recruitment/HRTech.html">HR Tech</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Recruitment/TalentAcquisition.html">Talent Acquisition</a>
+                    </li>
+                    <li class="hide"><a href="Recruitment/Coronavirus.html">Coronavitus</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a class="menu_fill_box"
+                    href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html"><strong>Management &amp;
+                        Leadership</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Management & Leadership/Entrepreneurship.html">Entrepreneurship</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Management & Leadership/CareerDevelopment.html">Career
+                            Development</a>
+                    <li class="hide"><a href="Pages/Management & Leadership/EmployeeRelations.html">Employee
+                            Relations</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/DiversityAndInclusion.html">Diversity &
+                            Inclusion</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/TeamManagement.html">Team Management</a>
+                    </li>
+                    <li class="hide"><a href="Pages/Management & Leadership/Outsourcing.html">Outsourcing</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/Job Search/JobSearchPage.html"><strong>Job
+                        Search</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Job Search/CV.html">CV</a></li>
+                    <li class="hide"><a href="Pages/Job Search/CoverLetter.html">Cover Letter</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Interviews.html">Interviews</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Tips.html">Tips</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/About/AboutPageMain.html"><strong>About</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/About/MoreInfo.html">More Info</a></li>
+                    <li class="hide"><a href="Pages/About/InTheMedia.html">In the Media</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="Pages/Contact.html"><strong>Contact</strong></a></li>
+        </ul>
+
+    </nav>
+    <br><br><br><br><br>
+    <h1>Is AI The Future Of Work?</h1>
+    <img src="../../Images/cranium-2099083_1280.png" alt="ai">
+    <p class="firstparagraph">The idea of smart machines and artificial intelligence has been around for a long time, with
+        known stories of smart machines and artificial beings dating back to ancient Greece. AI as a proper scientific
+        field of study was established way back in 1955 and has had its ups and downs since then. Although presently AI
+        is not quite what Isaac Asimov and Philip K. Dick envisioned, you could certainly make the argument that it's on
+        its way to that point.
+    </p>
+
+    <p>But what does that mean for the future of work and workers?
+    </p>
+    <h2>What is AI?</h2>
+    <p>A rudimentary understanding of what AI is is necessary to grasp its significance and why it is taking the world
+        by storm. The real-world definition of what AI is substantially different from what the great twentieth-century
+        science fiction writers envisioned in their works. In our reality, AI is not about machines with consciousness
+        and self-awareness, as much as it is about their ability to perform simpler functions.
+    </p>
+
+    <p>Britannica defines AI as "the ability of a digital computer or computer-controlled robot to perform tasks
+        commonly associated with intelligent beings." The explanation of why AI technology would be extremely appealing
+        is contained in that definition - it provides people with the opportunity to avail themselves of more powerful
+        and complex tools for doing essential tasks. Private individuals, businesses, and governments have taken a huge
+        interest in it, and as a result, it has had a boom in the last few decades.
+    </p>
+
+    <h2>How is AI Affecting Jobs?</h2>
+
+    <p>It wouldn't be too much of a stretch to say that by now, AI has become an integral part of our daily lives,
+        workplaces, and everything we do. This has prompted the MIT-IBM Watson AI Lab to research how it affects the
+        organization of tasks within occupations by analyzing 170 million jobs in the 2010-2017 period. The findings of
+        <a
+            href="https://mitibmwatsonailab.mit.edu/wp-content/uploads/2019/10/The-Future-of-Work-How-New-Technologies-Are-Transforming-Tasks2.pdf">the
+            resulting study</a> have been fascinating, to say the least.
+    </p>
+    <p>As a result of advancements in AI and the automation opportunities it offers, wages for workers in manufacturing
+        and production have fallen by more than five thousand dollars during the studied period. This represents the
+        market's reaction to AI as a tool and the value it brings to businesses compared to workers performing the same
+        menial tasks. When it comes to manufacturing and production, there is a lot of work that consists largely of
+        simple tasks that could be automated and performed by machines run by AI.
+    </p>
+
+    <p>At our current technological level, AI-driven work can be much more cost-effective than that of humans, making it
+        commercially preferable in many situations. In a sense, employers are taking parts of the regular worker's job
+        and outsourcing it to the machines that can do it more efficiently and reliably. The process bears a striking
+        resemblance to what happened during the industrial revolution, and the end result is the same - high-quality
+        products can be produced at a reduced cost of human involvement.
+    </p>
+
+    <p>Conversely, MIT-IBM Watson AI Lab found that the widespread use of AI doesn't affect all jobs in a similar
+        manner. Wages for jobs involving industry-specific knowledge, for instance, have increased by more than six
+        thousand dollars on average for the studied period. The pay of high-wage business employees, narrowly
+        specialized and professionals, and financiers seem to have been boosted by AI rather than deflated.
+    </p>
+
+    <p>Most other jobs fall somewhere between those two points. Reassuringly, the study indicates that very few jobs are
+        actually being phased out entirely due to the use of AI as of now. The research pointed out that only one in
+        forty of jobs consist entirely of tasks suitable for AI to perform. These mainly consist of work that is focused
+        on verifying credentials and allowing only certain people to enter a restricted area - such as a ticket taker.
+    </p>
+    <h2>What are the implications of AI for Our Work?</h2>
+    <p>With this in mind, the central question should no longer be whether AI is the future of work or not, because as
+        it stands, AI is very much an essential part of our day to day lives already. The more pertinent question seems
+        to be what does that mean for us as people, as employees and as employers.
+    </p>
+    <p>Unlike the previous industrial revolution, the one that is currently going on doesn't seem to be as threatening
+        to people's jobs. For a start, it doesn't seem to threaten to make entire sections of the workforce obsolete -
+        it just provides employers with more tools to boost effectiveness. </p>
+    <p>AI is always being improved and is currently moving forward at breakneck speed. However, it does have its
+        limitations. As it stands, it is very good at performing a limited number of very specific tasks in its
+        programming but is incapable of intuition, ingenuity, inspiration, and innovation. All of these things are often
+        essential for dealing with situations involving unforeseen complications, and a staggering percentage of cases
+        in everyday life are just such occasions.</p>
+    <p>This means that human employees are still essential for even the most advanced businesses - and would doubtlessly
+        continue to be for the foreseeable future. However, that doesn't mean that their positions and functions will
+        remain the same. Most people would not be so much <a
+            href="https://hbr.org/2020/03/ai-is-changing-work-and-leaders-need-to-adapt">forced out of their jobs by
+            AI</a>, as they would be forced to learn to use their newly available AI tools to perform their tasks more
+        efficiently.
+    </p>
+    <p>Technology boosts efficiency and allows workers to perform some tasks at a heretofore unimagined pace, and as a
+        result, the value of the tasks which AI can't perform increases. This is why professions that are grounded in
+        intuition and insight are thriving in this new AI-driven age.
+    </p>
+    <p>So, employees will have to adapt to use the new high-tech tools to maintain their jobs. But they're not the only
+        ones who are going to have to rethink their strategy and general way of approaching problems and making the most
+        of all available tools. Providing opportunities for life-long learning for employees has already become a
+        necessity for employers, who are also going to have to keep pace with the times. </p>
+    <p>As new and more advanced AI tools emerge, they're going to have to adopt said tools in order to stay competitive.
+        Due to the pace at which AI technology advances, it is no longer viable just to bring new people into the
+        company every time a new and essential piece of tech is rolled out. This means that employers are going to want
+        to teach their loyal employees to use said AI reliably.
+    </p>
+    <p>Investments in talent have been a common corporate practice for a long time now and are now viewed as an
+        essential part of the long-term development of a company. </p>
+    <h2>What are the Best Business Applications for AI?
+    </h2>
+    <p>At its current level, AI is very good at performing relatively simple tasks over and over. It doesn’t tire, it
+        doesn’t get bored, it doesn’t stop for any reason, and it can perform said simple tasks at a pace unimaginable
+        to any human. Additionally, some simple tasks performed by AI can be chained one after the other to achieve some
+        rather complex results.
+    </p>
+    <p>An employer can use this to ensure that their employee isn't buried in simple routine work and is free to do what
+        humans do better than machines. And what flesh and blood employees do better than AI use their judgment and
+        broader scope to react to extraordinary circumstances that simply haven't been factored into the machine's code.
+    </p>
+    <p>Nearly every industry can benefit from implementing the latest AI solutions in some way or another. It doesn't
+        matter what sort of product you provide - there is something that AI can do for you. For instance, an AI-driven
+        <a
+            href="https://www.forbes.com/sites/japan/2020/10/30/powered-by-entrepreneurs-japans-startup-ecosystem-is-poised-to-take-off/?sh=3697db674d60">voice-activated
+            maintenance app</a> has made the lives of Japanese wind turbine inspectors a lot easier.
+    </p>
+    <p>And even when you’re not dealing with outdoor activities and physical labor, AI is a boon. From the perspective
+        of human resources management, AI-driven tools have made it possible for vast amounts of applicant and employee
+        data to be compiled, sorted, and analyzed at a fraction of the effort that doing so manually would cost. This
+        leaves HR specialists with the task of taking said data into consideration, analyzing it, and making the best
+        possible informed decisions based on it when it comes to both hiring and managing human resources. All things
+        considered, <a
+            href="https://medium.com/@joanna.riley/changing-the-remote-work-landscape-with-ai-what-you-need-to-know-cbcf526211d3">AI
+            gives HR employees a break</a> - which they desperately need to deal with the complications that COVID-19
+        brings into the current situation.
+    </p>
+    <h2>How to Implement AI Solutions?
+    </h2>
+    <p>The ways in which a business can benefit from implementing AI-based solutions depends on the type of activities
+        said business performs. Businesses that are based largely on the routine and efficient performance of sets of
+        simple tasks in perpetuity can reap the greatest rewards when it comes to automation. Production lines can be
+        crewed by AI-operated robots and just overseen and maintained by human specialists. However, AI is useful for
+        much more than that.</p>
+    <p>Data pertaining to human resources, marketing, and a variety of other aspects of business can be gathered and
+        analyzed by algorithms before it ever reaches the eyes of the people who need it to make critical decisions. The
+        possibilities for the use of AI in modern business are practically endless. Figuring them out requires some hard
+        thinking and more than a bit of ingenuity and creativity</p>
+    <p>One thing to keep in mind when dealing with AI is that, like any other type of technology, <a
+            href="https://hrexecutive.com/want-to-adopt-ai-in-the-workplace-start-small-experts-say/">AI needs to be
+            introduced to any environment gradually</a>. Getting the hang of a large variety of quirky, complex, and
+        specialized tools is a demanding endeavour for employees. This is why businesses currently have the practice to
+        routinely add more AI-driven solutions to their portfolio and gradually train their employees in the use of the
+        newest tools.
+    </p>
+    <h2>In Conclusion</h2>
+    <p>Everyone, from the newest startup to the largest billion-dollar corporation, stands to gain from implementing
+        more sophisticated AI-driven tools. However, it should be noted that at the end of the day, AI is just that - a
+        tool to be used by humans. If programmed correctly, it is an excellent tool - and is always getting better.
+        However, it has very real limitations in its application.</p>
+    <p>Like any new type of technology, there are some very real moral, ethical, and practical problems that AI, its
+        implementation, and its results pose. Discussions and research on the subject are sure to be a fascinating
+        subject in the decades to come. For now, one thing is clear - AI can be used to achieve feats unthinkable to
+        regular humans, but it is still a long way from replacing them at work.
+    </p>
+    <a class="bookmark_btn" href="HRTech.html" title="go top"><i class="fas fa-sort-up"></i></a>
+    <br><br><br><br><br>
+    <footer>
+        <div class="footerLeft">
+            <a href="Pages/Recruitment/RecruitmentPage.html">Recruitment</a>
+            <br>
+            <a href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html">Management & Leadership</a>
+            <br>
+            <a href="Pages/Job Search/JobSearchPage.html">Job Search</a>
+        </div>
+        <div class="footerMiddle">
+            <a href="Pages/Aboutpage.html">About</a>
+            <br>
+
+            <a href="Pages/Contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>

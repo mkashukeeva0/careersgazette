@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outsourcing</title>
+    <link rel="stylesheet" href="../MainSite.css">
+    <style>
+         body {
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            font-size: 100px;
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* padding-top: 85px; */
+            padding-bottom: 85px;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logos {
+            /* border: 2px solid grey; */
+            position: relative;
+            top: 1.2em;
+            right: 5em;
+            /* right: 12em;
+            opacity: 0.3; */
+
+
+        }
+
+        .logoPink,
+        .logoLike1,
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            width: 0.5em;
+            height: 0.5em;
+            vertical-align: top;
+            margin-left: 0;
+            display: inline-block;
+            border-radius: -50%;
+        }
+
+        .logoPink {
+            background-color: #f5a;
+            position: relative;
+            right: 35px;
+            left: 125px;
+            z-index: 1;
+        }
+
+        .logoLike1 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            position: relative;
+            border-radius: 35%;
+            top: -43.5px;
+            bottom: 60px;
+            left: 40px;
+            z-index: 4;
+        }
+
+        .logo1 {
+            background-color: blueviolet;
+            position: relative;
+            top: 10px right: 10px;
+            z-index: 2;
+        }
+
+
+        .logo2 {
+            background-color: #f5a;
+            position: relative;
+            right: 40px;
+            z-index: 1;
+        }
+
+        .logo3 {
+            background-color: #59f;
+            border: 1px solid black;
+            position: relative;
+            border-top-left-radius: 52%;
+            border-radius: 52%;
+            right: 100px;
+            bottom: 35px;
+            left: -150px;
+            z-index: 3;
+        }
+
+        .logo4 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            /* font-size: 1; */
+            position: relative;
+            border-radius: 35%;
+            bottom: 45px;
+            right: 190px;
+            z-index: 4;
+        }
+
+        nav>ul>li {
+            float: left;
+            width: 33.3%;
+            cursor: pointer;
+        }
+
+        nav>ul>li>strong {
+            display: block;
+            padding: 1em 0;
+            text-align: center;
+            background-color: #555;
+            color: #dedede;
+        }
+
+      
+        nav>ul>li:hover>strong {
+            color: #fff;
+        }
+
+        
+        nav>ul>li>ul {
+          
+            display: none;
+            background-color: rgb(228, 242, 245);
+        }
+
+        nav>ul>li:hover>ul {
+            display: block;
+        }
+
+     
+        nav>ul>li>ul>li {
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        
+        nav>ul>li>ul>li:hover {
+            font-weight: bold;
+        }
+
+
+        nav>ul>li>ul>li {
+            border: 1px solid #f77;
+            border-top: 0;
+        }
+
+        .MenuBody,
+        .more,
+        .welcome2,
+        #block1,
+        .block2 {
+            border: 1px solid black;
+        }
+
+  
+        .welcome,
+        .topstories {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .welcome {
+            border: 3px solid red;
+            width: 58%;
+            height: 50vh;
+            box-sizing: border-box;
+            /* margin: 0; */
+        }
+
+        img {
+            width: 58%;
+            height: 30vh;
+            margin-left: 25vh;
+            margin-right: 25vh;
+        }
+
+        .welcomeExcerpt {
+            position: relative;
+            top: 30px;
+        }
+
+        .topstories {
+            border: 3px solid red;
+            /* margin: 0; */
+            width: 40%;
+            height: 50vh;
+            box-sizing: border-box;
+            margin-left: -0.4em;
+        }
+
+        .more {
+            width: auto;
+            height: 10vh;
+        }
+
+        .welcome2 {
+            border: 1px solid aqua;
+            width: 50%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+
+        #block1,
+        .block12 {
+            border: 1px solid red;
+            width: 50%;
+            height: 50vh;
+        }
+
+        ul {
+
+            list-style-type: none;
+
+            padding: 0;
+        }
+
+        li {
+
+            display: inline-block;
+            text-align: center;
+            width: 5em;
+            height: 5em;
+            margin-left: -0.25em;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu_fill_box {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #first {
+
+            margin-left: 3em;
+        }
+
+        .menu {
+            border: 2px solid grey;
+            display: inline-block;
+            position: relative;
+            width: 15%;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+        .menu:hover {
+            background-color: #f9c;
+        }
+
+        #oddOne {
+            position: relative;
+            bottom: 12.66em;
+            left: 79%;
+            margin-left: -0.8em;
+            font-size: 1em;
+        }
+
+
+        .block12A,
+        .block12B,
+        .block12C,
+        .block12D {
+            border: 2px solid grey;
+            display: inline-block;
+            width: 22%;
+            height: 20em;
+            vertical-align: top;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: #667;
+            font-size: 20px;
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 85px;
+            position: relative;
+            top: 15px;
+        }
+
+
+        /* footer>a {
+            display: inline-block;
+            margin-bottom: 20em;
+        } */
+
+        .footerLeft {
+            position: absolute;
+            left: 250px;
+        }
+
+        .footerMiddle {
+            position: relative;
+            left: 50vw;
+
+        }
+        h1 {
+            border-bottom: black;
+        }
+
+        img {
+            float: right;
+            width: 60%;
+            height: 40%;
+
+        }
+
+        .bookmark_btn {
+            position: fixed;
+            bottom: 0;
+            right: .2em;
+            font-size: 3em;
+            color: #566;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Outsourcing Work: How To Decide That You Need To Do It</h1>
+    <img src="../../Images/Outsource.jpg" alt="outsourcingMan">
+    <p class="firstparagraph">
+        To this day, traditional employment and using in-house work to achieve a company's most critical tasks is still
+        the most common way to conduct a business' activities.
+    </p>
+    <p>
+        While this state of affairs is unlikely to change any time soon, the practice of outsourcing specific key
+        business processes to freelancers and other companies has increasingly gathered momentum over the last few
+        years. Doing this can bring a myriad of benefits to a business, both in the short and long term.
+    </p>
+    <p>
+        But how do you decide that you need to outsource work?
+    </p>
+    <h2>Why Should You Outsource Work?</h2>
+    <p>
+        Outsourcing is an age-old practice that can create immense value for a business, but it needs to be done right.
+        The first thing that you need to examine when considering outsourcing is your reasons for doing it. To avoid
+        things going haywire, you need to <a
+            href="https://due.com/blog/5-signs-time-start-outsourcing-business/">outsource work for the right
+            reasons</a> - and there are a few reasons why you may consider it.
+    </p>
+    <p>
+        All business has its ebbs and flows. Sometimes a company can be hit by a torrent of orders that is very welcome
+        but not always manageable. Such cases tend to crop up occasionally, and present a particular challenge to
+        businesses.
+    </p>
+    <p>On the one hand, it it's not prudent to just reject work and risk alienating important customers. On the other
+        hand, if you don't do a good job, you will just disappoint said customers, which is not much better. In similar
+        situations, getting someone that's not in your employment to help you get the job may be your best bet.</p>
+    <p>
+        Some companies can afford to have employees dedicated to business processes that are not continuous or ongoing
+        at all times. If this is not the case with your company, taking care of those by giving them over to an outside
+        agent may be a good idea.
+    </p>
+    <p>
+        Similarly, many businesses stand to benefit from implementing processes that are outside of the competence of
+        all of their current employees or their company infrastructure. Instead of starting the long and arduous process
+        of looking for talent and tech to perform said process, you could just outsource the task. Doing this may be a
+        matter of necessity if implementing said business process is particularly urgent.
+    </p>
+    <p>
+        So, to recap, there are three main reasons to outsource work. You can do it to deal with a surplus of work, when
+        the tasks you have to deal with are peculiar and sporadic, or if you don't have the ability to deal with the
+        tasks at hand effectively.
+    </p>
+    <h2>When Should You Outsource Work?</h2>
+    <p>
+        Outsourcing should be done when it becomes clear that <a href="https://neilpatel.com/blog/outsource-work/">parts
+            of your business process are problematic for your company to perform</a>, and changing that state of affairs
+        is not a viable option. When you identify said processes and consider the alternatives, you should weigh the
+        benefits of outsourcing them against struggling with said processes or neglecting them altogether.
+    </p>
+    <p>
+        After you've decided that you need outside help, you should contemplate the nature of the process you wish to
+        outsource. Is it something a general professional in that broader field can perform or is it something that
+        requires a specialist's attention? Would the process that you wish to outsource require routine communication,
+        instruction, management, or oversight? What sort of organization would be required to get the job done to
+        specification, and what do you want your involvement and the other party's involvement in the process to be?
+    </p>
+    <p>
+        Going out and looking for freelancers or companies to outsource work to before carefully considering all these
+        aspects of the endeavor is extremely unproductive. In order to make outsourcing work for you, you absolutely
+        need to be aware of what you're looking for before you go out looking.
+    </p>
+    <p>
+        Trusting someone outside of your direct employment with crucial processes that your business' continual
+        existence may depend on is also a concern. Therefore, a bit of due diligence on the contractor is in order
+        before you start outsourcing work.
+    </p>
+    <h2>What Should You Keep In Mind When Outsourcing?
+    </h2>
+    <p>Outsourcing may be useful in many cases, but can often be suboptimal for various reasons.
+    </p>
+    <p>When you outsource work, you give up a significant part of your control over the process that you outsource, and
+        become dependent on a third party outside of your company. </p>
+    <p>Furthermore, while outsourcing may give your business tools that it normally does not have access to and thus
+        increase your reach and productivity, it is not always cheap. In fact, most companies that actively outsource
+        parts of their business <a
+            href="https://www.businessnewsdaily.com/11231-how-to-outsource-effectively.html">don't expect to cut costs
+            dramatically</a> by doing so. </p>
+    <p>
+        There are many ways in which outsourcing can go wrong, and <a
+            href="https://clutch.co/bpo/resources/reasons-companies-fail-outsourcing">many ways to do outsourcing
+            wrong</a>. It is critical to do your due diligence and take outsourcing seriously if you intend to make it
+        work for you.
+    </p>
+    <h2>What Sort of Work Should You Outsource?
+    </h2>
+    <p>You should consider outsourcing things that your company is struggling with or would struggle with doing. Look
+        for financially cumbersome processes that may be less arduous for specialist service providers. Those are prime
+        targets for outsourcing.</p>
+    <p>
+        Dealing with legal procedures is an excellent example of work that you should probably outsource. Legal matters
+        concerning your business are often intricate, numerous, and time-consuming. They require specialized knowledge,
+        and it is crucial that you take care of them promptly, and the consequences of late or messed up legal paperwork
+        can be dire indeed. Therefore, it is often a good idea to hire an outside attorney for legal counsel.
+    </p>
+    <p>Accounting is in the same ballpark as legal procedures. It comprises complex and protracted processes and
+        involves specialized knowledge and expensive software to perform efficiently. It is also an essential part of
+        any business - so there's no way to neglect it if you value your company. This is why outsourcing accounting is
+        so appealing and so commonly practiced.</p>
+    <p>
+        IT-related work is another aspect of business that commonly gets outsourced for the same reason as accounting
+        and legal procedures. Having an online footprint is essential for commercial success nowadays. Even companies
+        whose business model doesn't benefit from online ads and SEO often need to implement tech-related solutions to
+        compete.
+    </p>
+    <p>
+        For a significant number of companies, IT is not a core part of their business organization but is nevertheless
+        essential for them to remain relevant. Outsourcing the development of those IT-related solutions that a company
+        does employ is usually a good idea, especially for a small to medium-sized business, as it requires a very
+        particular set of skills.
+    </p>
+<p>
+    Public relations, advertisement, marketing, copywriting, and other types of content generation are also prime examples of tasks that you could successfully outsource. They tend to fall outside of many companies' purview but can nevertheless be key for the survival and development of a small to medium business.
+</p>
+<p>
+    Additionally, any company can benefit from outsourcing repetitive or monotonous work. While automation can be a good answer to that particular problem, investing in technological solutions can be very costly. If you aren't ready to do so yet or don't think doing so is commercially viable, you may want to look out to unload some of the work to someone who already has the infrastructure in place.
+</p>
+<h2>What Should You Look For When Outsourcing?
+</h2>
+<p>
+    The qualities of the contractor that you should keep an eye out for when you outsource work are wholly dependent on the tasks you wish to outsource.
+</p>
+<p>
+    If you're manufacturing goods, handling physical products, or providing physical services, or if you need to communicate and supervise the process constantly, your hands are pretty much tied. You don't have a choice but to look for a local company or freelancer. 
+</p>
+<p>
+    Likewise, if the outsourced tasks involve the manufacture of goods that need to be available at short notice, manufacturing them overseas may not be an option.
+</p>
+<p>
+    If, on the other hand, the job you want to get done can be done remotely or requires minimal involvement on your part, you can broaden the geographical scope of your search.
+</p>
+<p>
+    Sometimes expertise and experience may be of paramount importance for the task at hand, in which case you should expect to have to pay extra for services rendered. 
+</p>
+</body>
+
+</html>

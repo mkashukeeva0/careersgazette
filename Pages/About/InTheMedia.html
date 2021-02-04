@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In The Media</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            font-size: 100px;
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* padding-top: 85px; */
+            padding-bottom: 85px;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logos {
+            /* border: 2px solid grey; */
+            position: relative;
+            top: 1.2em;
+            right: 5em;
+            /* right: 12em;
+            opacity: 0.3; */
+
+
+        }
+
+        .logoPink,
+        .logoLike1,
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            width: 0.5em;
+            height: 0.5em;
+            vertical-align: top;
+            margin-left: 0;
+            display: inline-block;
+            border-radius: -50%;
+        }
+
+        .logoPink {
+            background-color: #f5a;
+            position: relative;
+            right: 35px;
+            left: 125px;
+            z-index: 1;
+        }
+
+        .logoLike1 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            position: relative;
+            border-radius: 35%;
+            top: -43.5px;
+            bottom: 60px;
+            left: 40px;
+            z-index: 4;
+        }
+
+        .logo1 {
+            background-color: blueviolet;
+            position: relative;
+            top: 10px right: 10px;
+            z-index: 2;
+        }
+
+
+        .logo2 {
+            background-color: #f5a;
+            position: relative;
+            right: 40px;
+            z-index: 1;
+        }
+
+        .logo3 {
+            background-color: #59f;
+            border: 1px solid black;
+            position: relative;
+            border-top-left-radius: 52%;
+            border-radius: 52%;
+            right: 100px;
+            bottom: 35px;
+            left: -150px;
+            z-index: 3;
+        }
+
+        .logo4 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            /* font-size: 1; */
+            position: relative;
+            border-radius: 35%;
+            bottom: 45px;
+            right: 190px;
+            z-index: 4;
+        }
+
+        nav>ul>li {
+            float: left;
+            width: 33.3%;
+            cursor: pointer;
+        }
+
+        nav>ul>li>strong {
+            display: block;
+            padding: 1em 0;
+            text-align: center;
+            background-color: #555;
+            color: #dedede;
+        }
+
+      
+        nav>ul>li:hover>strong {
+            color: #fff;
+        }
+
+        
+        nav>ul>li>ul {
+          
+            display: none;
+            background-color: rgb(228, 242, 245);
+        }
+
+        nav>ul>li:hover>ul {
+            display: block;
+        }
+
+     
+        nav>ul>li>ul>li {
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        
+        nav>ul>li>ul>li:hover {
+            font-weight: bold;
+        }
+
+
+        nav>ul>li>ul>li {
+            border: 1px solid #f77;
+            border-top: 0;
+        }
+
+        .MenuBody,
+        .more,
+        .welcome2,
+        #block1,
+        .block2 {
+            border: 1px solid black;
+        }
+
+  
+        .welcome,
+        .topstories {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .welcome {
+            border: 3px solid red;
+            width: 58%;
+            height: 50vh;
+            box-sizing: border-box;
+            /* margin: 0; */
+        }
+
+        img {
+            width: 58%;
+            height: 30vh;
+            margin-left: 25vh;
+            margin-right: 25vh;
+        }
+
+        .welcomeExcerpt {
+            position: relative;
+            top: 30px;
+        }
+
+        .topstories {
+            border: 3px solid red;
+            /* margin: 0; */
+            width: 40%;
+            height: 50vh;
+            box-sizing: border-box;
+            margin-left: -0.4em;
+        }
+
+        .more {
+            width: auto;
+            height: 10vh;
+        }
+
+        .welcome2 {
+            border: 1px solid aqua;
+            width: 50%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+
+        #block1,
+        .block12 {
+            border: 1px solid red;
+            width: 50%;
+            height: 50vh;
+        }
+
+        ul {
+
+            list-style-type: none;
+
+            padding: 0;
+        }
+
+        li {
+
+            display: inline-block;
+            text-align: center;
+            width: 5em;
+            height: 5em;
+            margin-left: -0.25em;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu_fill_box {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #first {
+
+            margin-left: 3em;
+        }
+
+        .menu {
+            border: 2px solid grey;
+            display: inline-block;
+            position: relative;
+            width: 15%;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+        .menu:hover {
+            background-color: #f9c;
+        }
+
+        #oddOne {
+            position: relative;
+            bottom: 12.66em;
+            left: 79%;
+            margin-left: -0.8em;
+            font-size: 1em;
+        }
+
+
+        .block12A,
+        .block12B,
+        .block12C,
+        .block12D {
+            border: 2px solid grey;
+            display: inline-block;
+            width: 22%;
+            height: 20em;
+            vertical-align: top;
+        }
+        .float {
+            float: left;
+            border: 2px solid black;
+            width: 10em;
+            height: 10em;
+            margin: .5em;
+            /* display: inline-block; */
+        }
+
+        .clearFloat {
+            clear: both;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: #667;
+            font-size: 20px;
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 85px;
+            position: relative;
+            top: 15px;
+        }
+
+
+        /* footer>a {
+            display: inline-block;
+            margin-bottom: 20em;
+        } */
+
+        .footerLeft {
+            position: absolute;
+            left: 250px;
+        }
+
+        .footerMiddle {
+            position: relative;
+            left: 50vw;
+
+        }
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <div class="logoPink"></div>
+            <div class="logoLike1"></div>
+            <div class="logo1"></div>
+            <div class="logo2"></div>
+            <div class="logo3"></div>
+            <div class="logo4"></div>
+        </div>
+        <div class="text">The Career Gazette</div>
+    </header>
+
+    <nav>
+
+        <ul>
+            <li id="first" class="menu"><a class="menu_fill_box" href="index.html"><strong>Home</strong></a></li>
+            <li class="menu"><a class="menu_fill_box"
+                    href="Pages/Recruitment/RecruitmentPage.html"><strong>Recruitment</strong></a>
+                <ul>
+                    <li class="hide">
+                        <a href="Recruitment/HRTech.html">HR Tech</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Recruitment/TalentAcquisition.html">Talent Acquisition</a>
+                    </li>
+                    <li class="hide"><a href="Recruitment/Coronavirus.html">Coronavitus</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a class="menu_fill_box"
+                    href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html"><strong>Management &amp;
+                        Leadership</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Management & Leadership/Entrepreneurship.html">Entrepreneurship</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Management & Leadership/CareerDevelopment.html">Career
+                            Development</a>
+                    <li class="hide"><a href="Pages/Management & Leadership/EmployeeRelations.html">Employee
+                            Relations</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/DiversityAndInclusion.html">Diversity &
+                            Inclusion</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/TeamManagement.html">Team Management</a>
+                    </li>
+                    <li class="hide"><a href="Pages/Management & Leadership/Outsourcing.html">Outsourcing</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/Job Search/JobSearchPage.html"><strong>Job
+                        Search</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Job Search/CV.html">CV</a></li>
+                    <li class="hide"><a href="Pages/Job Search/CoverLetter.html">Cover Letter</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Interviews.html">Interviews</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Tips.html">Tips</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/About/AboutPageMain.html"><strong>About</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/About/MoreInfo.html">More Info</a></li>
+                    <li class="hide"><a href="Pages/About/InTheMedia.html">In the Media</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="Pages/Contact.html"><strong>Contact</strong></a></li>
+        </ul>
+
+    </nav>
+    <br><br><br><br><br><br>
+    <p>Careers Gazette has had quite a bit of coverage in the media. We've been featured in:</p>
+    <div>
+        <div class="float"><img src="" alt="">BBC</div>
+        <div class="float"><img src="" alt="">Medium</div>
+        <div class="float"><img src="" alt="">Forbes</div>
+        <div class="float"><img src="" alt="">Startup Donut</div>
+        <div class="float"><img src="" alt="">Executive Grapevine</div>
+        <div class="clearFloat"></div>
+    </div>
+
+    <p>We are open to offers and suggestions from verious relevant publications, so we expect this list to keep growing!
+    </p>
+    <br><br><br><br><br>
+    <footer>
+        <div class="footerLeft">
+            <a href="Pages/Recruitment/RecruitmentPage.html">Recruitment</a>
+            <br>
+            <a href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html">Management & Leadership</a>
+            <br>
+            <a href="Pages/Job Search/JobSearchPage.html">Job Search</a>
+        </div>
+        <div class="footerMiddle">
+            <a href="Pages/Aboutpage.html">About</a>
+            <br>
+
+            <a href="Pages/Contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>

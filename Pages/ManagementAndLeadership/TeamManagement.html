@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamManagement</title>
+    <link rel="stylesheet" href="../MainSite.css">
+    <style>
+ body {
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            font-size: 100px;
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* padding-top: 85px; */
+            padding-bottom: 85px;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logos {
+            /* border: 2px solid grey; */
+            position: relative;
+            top: 1.2em;
+            right: 5em;
+            /* right: 12em;
+            opacity: 0.3; */
+
+
+        }
+
+        .logoPink,
+        .logoLike1,
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            width: 0.5em;
+            height: 0.5em;
+            vertical-align: top;
+            margin-left: 0;
+            display: inline-block;
+            border-radius: -50%;
+        }
+
+        .logoPink {
+            background-color: #f5a;
+            position: relative;
+            right: 35px;
+            left: 125px;
+            z-index: 1;
+        }
+
+        .logoLike1 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            position: relative;
+            border-radius: 35%;
+            top: -43.5px;
+            bottom: 60px;
+            left: 40px;
+            z-index: 4;
+        }
+
+        .logo1 {
+            background-color: blueviolet;
+            position: relative;
+            top: 10px right: 10px;
+            z-index: 2;
+        }
+
+
+        .logo2 {
+            background-color: #f5a;
+            position: relative;
+            right: 40px;
+            z-index: 1;
+        }
+
+        .logo3 {
+            background-color: #59f;
+            border: 1px solid black;
+            position: relative;
+            border-top-left-radius: 52%;
+            border-radius: 52%;
+            right: 100px;
+            bottom: 35px;
+            left: -150px;
+            z-index: 3;
+        }
+
+        .logo4 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            /* font-size: 1; */
+            position: relative;
+            border-radius: 35%;
+            bottom: 45px;
+            right: 190px;
+            z-index: 4;
+        }
+
+        nav>ul>li {
+            float: left;
+            width: 33.3%;
+            cursor: pointer;
+        }
+
+        nav>ul>li>strong {
+            display: block;
+            padding: 1em 0;
+            text-align: center;
+            background-color: #555;
+            color: #dedede;
+        }
+
+      
+        nav>ul>li:hover>strong {
+            color: #fff;
+        }
+
+        
+        nav>ul>li>ul {
+          
+            display: none;
+            background-color: rgb(228, 242, 245);
+        }
+
+        nav>ul>li:hover>ul {
+            display: block;
+        }
+
+     
+        nav>ul>li>ul>li {
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        
+        nav>ul>li>ul>li:hover {
+            font-weight: bold;
+        }
+
+
+        nav>ul>li>ul>li {
+            border: 1px solid #f77;
+            border-top: 0;
+        }
+
+        .MenuBody,
+        .more,
+        .welcome2,
+        #block1,
+        .block2 {
+            border: 1px solid black;
+        }
+
+  
+        .welcome,
+        .topstories {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .welcome {
+            border: 3px solid red;
+            width: 58%;
+            height: 50vh;
+            box-sizing: border-box;
+            /* margin: 0; */
+        }
+
+        img {
+            width: 58%;
+            height: 30vh;
+            margin-left: 25vh;
+            margin-right: 25vh;
+        }
+
+        .welcomeExcerpt {
+            position: relative;
+            top: 30px;
+        }
+
+        .topstories {
+            border: 3px solid red;
+            /* margin: 0; */
+            width: 40%;
+            height: 50vh;
+            box-sizing: border-box;
+            margin-left: -0.4em;
+        }
+
+        .more {
+            width: auto;
+            height: 10vh;
+        }
+
+        .welcome2 {
+            border: 1px solid aqua;
+            width: 50%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+
+        #block1,
+        .block12 {
+            border: 1px solid red;
+            width: 50%;
+            height: 50vh;
+        }
+
+        ul {
+
+            list-style-type: none;
+
+            padding: 0;
+        }
+
+        li {
+
+            display: inline-block;
+            text-align: center;
+            width: 5em;
+            height: 5em;
+            margin-left: -0.25em;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu_fill_box {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #first {
+
+            margin-left: 3em;
+        }
+
+        .menu {
+            border: 2px solid grey;
+            display: inline-block;
+            position: relative;
+            width: 15%;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+        .menu:hover {
+            background-color: #f9c;
+        }
+
+        #oddOne {
+            position: relative;
+            bottom: 12.66em;
+            left: 79%;
+            margin-left: -0.8em;
+            font-size: 1em;
+        }
+
+
+        .block12A,
+        .block12B,
+        .block12C,
+        .block12D {
+            border: 2px solid grey;
+            display: inline-block;
+            width: 22%;
+            height: 20em;
+            vertical-align: top;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: #667;
+            font-size: 20px;
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 85px;
+            position: relative;
+            top: 15px;
+        }
+
+
+        /* footer>a {
+            display: inline-block;
+            margin-bottom: 20em;
+        } */
+
+        .footerLeft {
+            position: absolute;
+            left: 250px;
+        }
+
+        .footerMiddle {
+            position: relative;
+            left: 50vw;
+
+        }
+        h1 {
+            border-bottom: black;
+        }
+
+        img {
+            float: right;
+            width: 30em;
+            height: 50em;
+
+        }
+
+        .bookmark_btn {
+            position: fixed;
+            bottom: 0;
+            right: .2em;
+            font-size: 3em;
+            color: #566;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <div class="logoPink"></div>
+            <div class="logoLike1"></div>
+            <div class="logo1"></div>
+            <div class="logo2"></div>
+            <div class="logo3"></div>
+            <div class="logo4"></div>
+        </div>
+        <div class="text">The Career Gazette</div>
+    </header>
+
+    <nav>
+
+        <ul>
+            <li id="first" class="menu"><a class="menu_fill_box" href="index.html"><strong>Home</strong></a></li>
+            <li class="menu"><a class="menu_fill_box"
+                    href="Pages/Recruitment/RecruitmentPage.html"><strong>Recruitment</strong></a>
+                <ul>
+                    <li class="hide">
+                        <a href="Recruitment/HRTech.html">HR Tech</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Recruitment/TalentAcquisition.html">Talent Acquisition</a>
+                    </li>
+                    <li class="hide"><a href="Recruitment/Coronavirus.html">Coronavitus</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a class="menu_fill_box"
+                    href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html"><strong>Management &amp;
+                        Leadership</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Management & Leadership/Entrepreneurship.html">Entrepreneurship</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Management & Leadership/CareerDevelopment.html">Career
+                            Development</a>
+                    <li class="hide"><a href="Pages/Management & Leadership/EmployeeRelations.html">Employee
+                            Relations</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/DiversityAndInclusion.html">Diversity &
+                            Inclusion</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/TeamManagement.html">Team Management</a>
+                    </li>
+                    <li class="hide"><a href="Pages/Management & Leadership/Outsourcing.html">Outsourcing</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/Job Search/JobSearchPage.html"><strong>Job
+                        Search</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Job Search/CV.html">CV</a></li>
+                    <li class="hide"><a href="Pages/Job Search/CoverLetter.html">Cover Letter</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Interviews.html">Interviews</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Tips.html">Tips</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/About/AboutPageMain.html"><strong>About</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/About/MoreInfo.html">More Info</a></li>
+                    <li class="hide"><a href="Pages/About/InTheMedia.html">In the Media</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="Pages/Contact.html"><strong>Contact</strong></a></li>
+        </ul>
+
+    </nav>
+    <h1>
+        Can We Really Be Productive for 8 Hours A Day?
+    </h1>
+    <img class="float" src="../../Images/man-5754626_1280.png" alt="burnoutMan">
+    <p class="firstparagraph">COVID-19 has shaken our world to the core, and its impact on our way of life has been profound and undeniable. Many age-old preconceptions were shattered at first contact with the current crisis, with society re-imagining its essential structures and practices to suit the new normal. 
+    </p>
+    <p>
+        This being the case, now may be a good time to re-examine one of the concepts on which most daily routines have been built in the last century or so, namely - the eight-hour workday
+    </p>
+    <p>
+        Does it stand up to scrutiny? Is it really productive from the point of view of the company and the worker?
+    </p>
+    <h2>A Brief History of Modern Working Hours</h2>
+    <p>
+        Back when industrialization began, there was no limit on how much workers could be exploited. There are laws on the books of many nations that limited working hours to eight per day, with some of the most striking instances dating back to the end of the XVI century. However, by all accounts, none of these laws were enforced at all.
+    </p>
+    <p>
+        Industrial magnates took advantage of that fact, driving factory workers to toil in shifts that were 10-16 hours long, for six days a week, in order to keep the machines running at all times and maximize productivity. The problems this sort of horrendous exploitation caused became apparent pretty quickly, with demands to improve conditions slowly escalating with time. 
+    </p>
+    <p>
+        The first accounts of intense social and political pressure to curb these appalling practices date to the XIX century's beginning. Unfortunately, it took nearly a century of strikes and political jostling for the eight-hour workday to be put into practice, with strict enforcement. That only happened around or immediately after the time of The Great War. By the time 1920 rolled up, the 8 hour working day had been implemented almost universally - and it remained adequate for the next few decades.
+    </p>
+    <h2>The Nature of Work Nowadays</h2>
+    <p>
+        The very nature of business and work has changed substantially since the days when the eight hour work day was introduced as the norm for workers the world over. Back in the day, most business processes were significantly slower and involved much more physical labor. With automation in its infancy, running a company required a lot more human toil than it does nowadays. Conversely, although labor back then was more physical, it often didn't require as much sophistication and specialized knowledge from the employee.
+    </p>
+    <p>Nowadays, the situation has been completely reversed. The relentless forward march of technology has given us powerful tools that boost efficiency immeasurably. All the heavy lifting - both figurative and literal, is done by machines. We have data-sorting AI for the paperwork and forklifts and cranes that can take care of almost any weight. However, in many cases, the usefulness of these tools is tied directly to the sophistication of their user.   
+    </p>
+    <p>
+        Modern workers usually don't need to do nearly as much physical work as their XIX and XX century counterparts, but they need to be much more educated and focused, and precise to be effective at their jobs. In short, the decrease in actual physical work that needs doing comes at the expense of a dramatic increase in the need for intellectual effort on the part of the worker. And this is where we run into some serious problems.
+    </p>
+    <h2>The 8-Hour Work Day Problem Today</h2>
+    <p>
+        Over the last few decades, various studies have confirmed that humans can't be productive throughout the whole workday. Naturally, their results and conclusions vary significantly, with some indicating that humans can't completely concentrate their full attention on intellectually demanding tasks for <a href="https://my.executivegrapevine.com/content/article/2020-11-25-5-ways-jobseekers-can-stand-out-this-winter">more than three hours each day</a>. Others conclude that humans can be intellectually productive for up to four or even six hours each day. 
+    </p>
+    <p>
+        However, no study seems to conclude that the average person, or even above-average people, can effectively concentrate their intellectual efforts on challenging tasks for a full eight hours or more.
+    </p>
+    <p>
+        Naturally, the Internet is full of claims that said individuals do this all the time. A quick search will reveal a ton of anecdotal evidence and written personal stories of people who say they can work or study for eight to twelve hours per day, each day, at peak capacity. Furthermore, there are various guides on how you can do that reliably.
+    </p>
+    <p>
+        While it may be possible to do that for a short while, in a time of crisis, for instance, it should be obvious to anyone who's tried it that doing so is extremely taxing, both mentally and physically. It is an unnatural, undesirable and unsustainable state, and over time <a href="https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases">it leads to burnout</a>. The WHO recognizes burnout as a condition that could easily lead to even more severe health concerns and mental health problems.
+    </p>
+    <p>
+        Employees nowadays are expected to put in their full eight hours every working day, and in many cases, are encouraged to work overtime and on days off in return for increased pay and other perks. While it is true that motivation and inspiration can push a person to perform better than the average, it is important to remember that people still have their limits.
+    </p>
+    <h2>Can We Be Productive For 8 Hours A Day?</h2>
+    <p>
+        There is no easy answer to that question, not least because productivity is not universal across all fields of work. It all depends on what definition of productivity you choose to adopt.
+    </p>
+    <p>
+        If you consider productivity to be people's work at peak intellectual and physical capacity, then clearly not. There's a limit on how much physical labor one can effectively put out at maximum efficiency. The same goes for intellectually demanding work - learning complex things and using sophisticated tools that require your undivided attention, ingenuity or inspiration becomes impossible after a certain point. That point varies from person to person but is usually well before the 8-hour mark.
+    </p>
+    <p>
+        The answer changes if you adopt a broader definition of productivity. If you define productivity as "tasks getting accomplished at a reasonable pace," being productive for 8 hours each day becomes quite possible. In fact, that's how most things get done, with peak efficiency seldom being required for very long in an average employee's day. And when it is required, it doesn't happen all at once - spikes of productivity are usually interspersed between continuous periods of <a href="https://www.inc.com/melanie-curtin/in-an-8-hour-day-the-average-worker-is-productive-for-this-many-hours.html#:~:text=Research%20suggests%20that%20in%20an,works%208.8%20hours%20every%20day.">light activity, distraction, and rest</a>.
+    </p>
+    <h2>
+        What Does This Mean?
+    </h2>
+    <p>
+        The knowledge that humans have effective limitations on how long they can operate at peak capacity is valuable in many ways. In some instances, knowing where those boundaries lay may help employers re-imagine and restructure their business process to boost efficiency. 
+    </p>
+    <p>
+        If you only benefit from those magical three hours of real productivity that you can get out of your employees, you don't really need them glued to a chair at the office for eight hours straight every day. This is especially relevant for remote office workers and freelancers. In some cases, it may be beneficial to cut their mandatory working hours in order to prevent diminishing returns.
+    </p>
+    <p>
+        This sounds good in theory but may not be as easy to implement in practice. Employees are not machines that you can switch on, dial-up to ten instantly so that they can produce those three hours of solid 100% performance at will. Training and discipline may go a long way towards achieving that, but many people simply don't work like that and can't learn how to.
+    </p>
+    <p>
+        Furthermore, very few business processes can function on short intense bursts of extreme efficiency, followed by long pauses. Most business processes require continuous input throughout the day, with the employees involved being "on standby" during the parts of the process that don't need their direct attention.
+    </p>
+    <p>
+        With all of this in mind, both employers and workers will have to put some effort into figuring out how they can achieve optimum productivity with minimal health risks. This will likely require some experimentation and observation to put into practice effectively but it could definitely be worth it. While this practice obviously can’t be implemented universally, there are definitely instances where everyone involved may benefit both from the efficiency boost and the shortened work hours.
+    </p>
+    <p>
+        There are <a href="https://www.lifehack.org/articles/productivity/8-reasons-productive-can-fix.html">many strategies that can help you boost your productivity</a>, if doing so is your goal. Those don't necessarily have to involve straining your mind and body beyond what is known to clearly be the limit of human capability, by trying to be hyper-productive and focused all the time.
+    </p>
+    <br><br><br><br><br>
+    <footer>
+        <div class="footerLeft">
+            <a href="Pages/Recruitment/RecruitmentPage.html">Recruitment</a>
+            <br>
+            <a href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html">Management & Leadership</a>
+            <br>
+            <a href="Pages/Job Search/JobSearchPage.html">Job Search</a>
+        </div>
+        <div class="footerMiddle">
+            <a href="Pages/Aboutpage.html">About</a>
+            <br>
+
+            <a href="Pages/Contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

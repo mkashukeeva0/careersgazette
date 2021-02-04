@@ -1,0 +1,47 @@
+/* body{
+    background-image:url(../../../../mkHW/images-HW/cherries_slot.jpg);
+} */
+
+/* body{
+    /* font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+    font: 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+footer, header{
+    position: fixed;
+}
+
+p{
+    line-height: 30px;
+    margin-bottom: 1em;
+    
+}
+.firstparagraph {
+    text-indent: 5em;
+}
+
+h1{
+    /* text-transform: capitalize; не става, пробвах и със style в head секцията, както и като inline attr*/ 
+    /* font-style: normal;
+    font-weight: 700; */
+    /* border-bottom: 5px solid black; */
+    font: normal 700;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    
+}
+.float {
+    float: left;
+}
+h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(243, 99, 16);
+    text-decoration: underline;
+}
+

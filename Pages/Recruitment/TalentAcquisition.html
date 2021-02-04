@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentAcquisition</title>
+    <link rel="stylesheet" href="../MainSite.css">
+    <style>
+         body {
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            font-size: 100px;
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* padding-top: 85px; */
+            padding-bottom: 85px;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logos {
+            /* border: 2px solid grey; */
+            position: relative;
+            top: 1.2em;
+            right: 5em;
+            /* right: 12em;
+            opacity: 0.3; */
+
+
+        }
+
+        .logoPink,
+        .logoLike1,
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            width: 0.5em;
+            height: 0.5em;
+            vertical-align: top;
+            margin-left: 0;
+            display: inline-block;
+            border-radius: -50%;
+        }
+
+        .logoPink {
+            background-color: #f5a;
+            position: relative;
+            right: 35px;
+            left: 125px;
+            z-index: 1;
+        }
+
+        .logoLike1 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            position: relative;
+            border-radius: 35%;
+            top: -43.5px;
+            bottom: 60px;
+            left: 40px;
+            z-index: 4;
+        }
+
+        .logo1 {
+            background-color: blueviolet;
+            position: relative;
+            top: 10px right: 10px;
+            z-index: 2;
+        }
+
+
+        .logo2 {
+            background-color: #f5a;
+            position: relative;
+            right: 40px;
+            z-index: 1;
+        }
+
+        .logo3 {
+            background-color: #59f;
+            border: 1px solid black;
+            position: relative;
+            border-top-left-radius: 52%;
+            border-radius: 52%;
+            right: 100px;
+            bottom: 35px;
+            left: -150px;
+            z-index: 3;
+        }
+
+        .logo4 {
+            background-color: rgb(234, 255, 43);
+            border: 5px solid #111;
+            /* font-size: 1; */
+            position: relative;
+            border-radius: 35%;
+            bottom: 45px;
+            right: 190px;
+            z-index: 4;
+        }
+
+        nav>ul>li {
+            float: left;
+            width: 33.3%;
+            cursor: pointer;
+        }
+
+        nav>ul>li>strong {
+            display: block;
+            padding: 1em 0;
+            text-align: center;
+            background-color: #555;
+            color: #dedede;
+        }
+
+      
+        nav>ul>li:hover>strong {
+            color: #fff;
+        }
+
+        
+        nav>ul>li>ul {
+          
+            display: none;
+            background-color: rgb(228, 242, 245);
+        }
+
+        nav>ul>li:hover>ul {
+            display: block;
+        }
+
+     
+        nav>ul>li>ul>li {
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        
+        nav>ul>li>ul>li:hover {
+            font-weight: bold;
+        }
+
+
+        nav>ul>li>ul>li {
+            border: 1px solid #f77;
+            border-top: 0;
+        }
+
+        .MenuBody,
+        .more,
+        .welcome2,
+        #block1,
+        .block2 {
+            border: 1px solid black;
+        }
+
+  
+        .welcome,
+        .topstories {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .welcome {
+            border: 3px solid red;
+            width: 58%;
+            height: 50vh;
+            box-sizing: border-box;
+            /* margin: 0; */
+        }
+
+        img {
+            width: 58%;
+            height: 30vh;
+            margin-left: 25vh;
+            margin-right: 25vh;
+        }
+
+        .welcomeExcerpt {
+            position: relative;
+            top: 30px;
+        }
+
+        .topstories {
+            border: 3px solid red;
+            /* margin: 0; */
+            width: 40%;
+            height: 50vh;
+            box-sizing: border-box;
+            margin-left: -0.4em;
+        }
+
+        .more {
+            width: auto;
+            height: 10vh;
+        }
+
+        .welcome2 {
+            border: 1px solid aqua;
+            width: 50%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+
+        #block1,
+        .block12 {
+            border: 1px solid red;
+            width: 50%;
+            height: 50vh;
+        }
+
+        ul {
+
+            list-style-type: none;
+
+            padding: 0;
+        }
+
+        li {
+
+            display: inline-block;
+            text-align: center;
+            width: 5em;
+            height: 5em;
+            margin-left: -0.25em;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu_fill_box {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #first {
+
+            margin-left: 3em;
+        }
+
+        .menu {
+            border: 2px solid grey;
+            display: inline-block;
+            position: relative;
+            width: 15%;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+        .menu:hover {
+            background-color: #f9c;
+        }
+
+        #oddOne {
+            position: relative;
+            bottom: 12.66em;
+            left: 79%;
+            margin-left: -0.8em;
+            font-size: 1em;
+        }
+
+
+        .block12A,
+        .block12B,
+        .block12C,
+        .block12D {
+            border: 2px solid grey;
+            display: inline-block;
+            width: 22%;
+            height: 20em;
+            vertical-align: top;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: #667;
+            font-size: 20px;
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 85px;
+            position: relative;
+            top: 15px;
+        }
+
+
+        /* footer>a {
+            display: inline-block;
+            margin-bottom: 20em;
+        } */
+
+        .footerLeft {
+            position: absolute;
+            left: 250px;
+        }
+
+        .footerMiddle {
+            position: relative;
+            left: 50vw;
+
+        }
+        h1 {
+            border-bottom: black;
+        }
+
+        img {
+            float: right;
+            width: 60%;
+            height: 40%;
+
+        }
+
+        .bookmark_btn {
+            position: fixed;
+            bottom: 0;
+            right: .2em;
+            font-size: 3em;
+            color: #566;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <div class="logoPink"></div>
+            <div class="logoLike1"></div>
+            <div class="logo1"></div>
+            <div class="logo2"></div>
+            <div class="logo3"></div>
+            <div class="logo4"></div>
+        </div>
+        <div class="text">The Career Gazette</div>
+    </header>
+
+    <nav>
+
+        <ul>
+            <li id="first" class="menu"><a class="menu_fill_box" href="index.html"><strong>Home</strong></a></li>
+            <li class="menu"><a class="menu_fill_box"
+                    href="Pages/Recruitment/RecruitmentPage.html"><strong>Recruitment</strong></a>
+                <ul>
+                    <li class="hide">
+                        <a href="Recruitment/HRTech.html">HR Tech</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Recruitment/TalentAcquisition.html">Talent Acquisition</a>
+                    </li>
+                    <li class="hide"><a href="Recruitment/Coronavirus.html">Coronavitus</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a class="menu_fill_box"
+                    href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html"><strong>Management &amp;
+                        Leadership</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Management & Leadership/Entrepreneurship.html">Entrepreneurship</a>
+                    </li>
+                    <li class="hide">
+                        <a href="Management & Leadership/CareerDevelopment.html">Career
+                            Development</a>
+                    <li class="hide"><a href="Pages/Management & Leadership/EmployeeRelations.html">Employee
+                            Relations</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/DiversityAndInclusion.html">Diversity &
+                            Inclusion</a></li>
+                    <li class="hide"><a href="Pages/Management & Leadership/TeamManagement.html">Team Management</a>
+                    </li>
+                    <li class="hide"><a href="Pages/Management & Leadership/Outsourcing.html">Outsourcing</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/Job Search/JobSearchPage.html"><strong>Job
+                        Search</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/Job Search/CV.html">CV</a></li>
+                    <li class="hide"><a href="Pages/Job Search/CoverLetter.html">Cover Letter</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Interviews.html">Interviews</a></li>
+                    <li class="hide"><a href="Pages/Job Search/Tips.html">Tips</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a class="menu_fill_box" href="Pages/About/AboutPageMain.html"><strong>About</strong></a>
+                <ul>
+                    <li class="hide"><a href="Pages/About/MoreInfo.html">More Info</a></li>
+                    <li class="hide"><a href="Pages/About/InTheMedia.html">In the Media</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="Pages/Contact.html"><strong>Contact</strong></a></li>
+        </ul>
+
+    </nav>
+    <br><br><br><br><br>
+    <h1>Hiring Remote Employees_ Here's How To Onboard Them Successfully</h1>
+    <img src="" alt="">
+    <p class="firstparagraph">
+        Adding new talent to a company has never been an easy task. Interviewing, hiring, onboarding, and retaining employees have always been arduous and time-consuming processes that could turn into vast sinks of money and time for businesses. While remote interviews and online communication platforms can save a bit of the hassle, it's still no mean feat to hire, coach, and organize employees for work - regardless of whether we're talking about an office environment or remote jobs. 
+    </p>
+    <p>
+        The advent of COVID-19 has made most of those already problematic tasks several orders of magnitude harder while simultaneously increasing their relevance for businesses. The pandemic, in combination with <a href="https://www.themuse.com/advice/3-mistakes-not-to-make-when-hiring-remote-employees">poor hiring practices</a> and poor onboarding oversight, has resulted in many instances of companies suffering from a chronic shortage of qualified workers and high turnover.
+    </p>
+    <p>
+        A good way to avoid that situation, or get out of it if you have the misfortune to currently be in it, is to make sure your human capital is up to snuff. Ensuring that your employees are productive and well adjusted should be a business' first priority in such troubled times. 
+    </p>
+    <p>
+        All of that starts with the onboarding process, which needs to be the very best it can possibly be. Onboarding is difficult even under normal circumstances when dealing with employees face to face - so how do you manage to do that with remote workers? 
+    </p>
+    <h2>Revise Your Onboarding Plan</h2>
+    <p>A bit of introspection is in order before you even start preparing for hiring a remote employee. 
+    </p>
+    <p>
+        Employers tend to overload new hires with activities during the first month or so of employment. This is usually done to show employees the ropes and is not necessarily a bad practice under normal circumstances.   
+    </p>
+    <p>
+        Most of a worker's tasks in a company don't get done in a vacuum - workers need to interact with various already established systems and other employees to get anything done. Throwing a new recruit in the thick of things allows them to get familiar with all the tasks that they would need to perform and meet the people they would have to work with as soon as possible.
+    </p>
+    <p>
+        This is easily doable in an office, where everyone is at hand to assist the new hire with any difficulties or explain the ins and outs of all relevant business processes. However, mentoring remote employees is a whole other kettle of fish. Not having physical access to said people complicates matters immensely and makes the process a lot more cumbersome and time-consuming. 
+    </p>
+    <p>
+        With this in mind, you may want to <a href="https://www.fastcompany.com/90480127/how-to-onboard-new-employees-when-youre-all-working-from-home">revise your plan</a> for the tasks given to each new employee for the initial couple of months of work. Cutting down the number of activities that they need to perform to begin with and introducing new ones may mean that new hires would take more time to take on their new responsibilities fully. This may seem suboptimal from a productivity standpoint, but the alternative puts too much of a burden on an employee and is likely to cause severe stress, anxiety, and feelings of inadequacy in the employee.
+    </p>
+    <p>
+        Putting undue pressure on an employee results in an early turnoverwhen everyone is already isolated in their homes, stressed out, and in many cases - depressed to an extent. This brings you all the way back to square one, which is something you wish to avoid if possible.
+    </p>
+    <h2>Prepare All Your Materials Beforehand</h2>
+    <p>
+        Taking things in stride and showing new employees how things are done with little or no preparation may have been a viable strategy in an office, but it is next to impossible to do in the context of remote work.
+    </p>
+    <p>
+        With this in mind, you may want to invest extra time hammering out <a href="https://blog.hubspot.com/sales/onboarding-remote-employees">crucial details about your onboarding plan</a> and committing them to record for further analysis, clarification, and eventually - implementation. 
+    </p>
+    <p>
+        Creating a step-by-step plan that clearly outlines what each individual recruit can expect from their routine and how said routine will develop over the span of the first few months is also invaluable for smooth onboarding.
+    </p>
+    <p>
+        Setting up individual milestones for your workers is also an excellent practice when dealing with both on-site workers and remote employees. Doing so while accounting for each new employee's particular working style and abilities requires extensive communication with each worker, but it leads to great results.
+    </p>
+    <p>
+        On the technical side of things, you will need to conduct some preparations ahead of time so that your new remote employee could hit the ground running. Having all the tools they may need delivered to them so that it can be installed before it is actually needed is crucial for a good head start. This is especially relevant if your remote workers will be expected to handle sophisticated machinery that requires setting up.
+    </p>
+    <p>
+        Your onboarding plan should also account for all technical difficulties that would inevitably pop up along the way. It is practically inevitable that your remote employee would hit a technological snag at some point during onboarding. It would be best if you had a specialist ready to help the employee resolve the issue as soon as it appears to avoid periods of downtime and the lapse of both productivity and motivation that it brings. 
+    </p>
+    <h2>Get Your Team Ready For New Members</h2>
+    <p>
+        Preparing the other members of a team for the arrival of a new recruit is also a crucial part of the onboarding process. 
+    </p>
+    <p>
+        Even if new team members are not going to be directly involved with the business processes that your current employees are responsible for, the chances are that they would have to work together at some point in the future.
+    </p>
+    <p>
+        This is why keeping your team apprised of any moves you make with regards to new additions to the company is a good idea. Informing everyone involved that they are about to have a new colleague, what said team member's function would be, and when they start will give your other workers time to prepare to welcome the new addition to the team appropriately.
+    </p>
+    <p>
+        While not strictly necessary, calling a meeting to explain what you expect current team members to do when it comes to the new addition to the company is certainly a good idea. Team members may need to take on extra duties for the duration of the onboarding process.
+    </p>
+    <p>
+        Make sure those are all clearly defined and that you adjust the schedules of team members to account for the extra tasks. Remember, remote interactions with a member of your organization that hasn't yet hit their stride may be time-consuming, even if the new worker doesn't need to undergo extensive training.
+    </p>
+    <p>
+        On that note, consider assigning an experienced member of your team to be the "mentor" of the new recruit. Dedicating an established team member as a go-to person for any questions, support, and guidance is beneficial for new employees, even if they don't need all that much in the way of instruction.
+    </p>
+    <h2>Emphasize Communication</h2>
+    <p>
+        For many employees, onboarding includes getting intimately familiar with the ins and outs of your business process as well as company policy and a myriad other complicated subjects. Working remotely without the ability to instantly reach out to a mentor and clarify matters at a moment's notice can make that very difficult for the worker.
+    </p>
+    <p>
+        To alleviate the issue as much as possible, you will need to take advantage of all the communication platforms you have at your disposal during the remote onboarding.
+    </p>
+    <p>
+        When communicating with a new recruit, make everything as clear and succinct as possible. Use short, concise emails with bullet points and unambiguous text messages to communicate tasks with new employees. Don't skip out on crucial details that an employee may need to perform their job, but make sure you don't wax lyrically and present all the necessary information in a digestible form.
+    </p>
+    <p>
+        Double checking that your messages are clearly understood and actively encouraging questions are also necessary practices. Doing so invites trust and creates a positive bond with new additions to the company and allows the recruit to do their job properly from the get-go.
+    </p>
+    <p>
+        Video conferences are another excellent way of <a href="https://hrdailyadvisor.blr.com/2020/04/14/training-employees-to-effectively-work-from-home/">training both long-standing and new remote employees</a>. While they're not as engaging as face to face office meetings, video conferences give employees both the opportunity to interact with each other and discuss relevant topics in a different setting. This is useful for both maintaining morale and tackling various practical issues.
+    </p>
+    <br><br><br><br><br>
+    <footer>
+        <div class="footerLeft">
+            <a href="Pages/Recruitment/RecruitmentPage.html">Recruitment</a>
+            <br>
+            <a href="Pages/ManagementAndLeadership/ManagementAndLeadershipPage.html">Management & Leadership</a>
+            <br>
+            <a href="Pages/Job Search/JobSearchPage.html">Job Search</a>
+        </div>
+        <div class="footerMiddle">
+            <a href="Pages/Aboutpage.html">About</a>
+            <br>
+
+            <a href="Pages/Contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
